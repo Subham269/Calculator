@@ -5,36 +5,34 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div class="display">0</div>
-        <div class="buttons">
-            <div class="row-1">
-                <button onclick="pressNumber(7)">7</button>
-                <button onclick="pressNumber(8)">8</button>
-                <button onclick="pressNumber(9)">9</button>
-                <button onclick="pressOperation('/')">/</button>
+        <div class="container">
+            <div id="display">0</div>
+            <div class="buttons">
+                <div class="button-row">
+                    <button onclick="pressNumber(7)">7</button>
+                    <button onclick="pressNumber(8)">8</button>
+                    <button onclick="pressNumber(9)">9</button>
+                    <button onclick="pressOperator('/')">/</button>
+                </div>
+                <div class="button-row">
+                    <button onclick="pressNumber(4)">4</button>
+                    <button onclick="pressNumber(5)">5</button>
+                    <button onclick="pressNumber(6)">6</button>
+                    <button onclick="pressOperator('*')">x</button>
+                </div>
+                <div class="button-row">
+                    <button onclick="pressNumber(1)">1</button>
+                    <button onclick="pressNumber(2)">2</button>
+                    <button onclick="pressNumber(3)">3</button>
+                    <button onclick="pressOperator('-')">-</button>
+                </div>
+                <div class="button-row">
+                    <button onclick="clearDisplay()">C</button>
+                    <button onclick="pressNumber(0)">0</button>
+                    <button onclick="calculate()">=</button>
+                    <button onclick="pressOperator('+')">+</button>
+                </div>
             </div>
-            <div class="row-2">
-                <button onclick="pressNumber(4)">4</button>
-                <button onclick="pressNumber(5)">5</button>
-                <button onclick="pressNumber(6)">6</button>
-                <button onclick="pressOperation('*')">x</button>
-            </div>
-            <div class="row-3">
-            <button onclick="pressNumber(1)">1</button>
-            <button onclick="pressNumber(2)">2</button>
-            <button onclick="pressNumber(3)">3</button>
-            <button onclick="pressOperation('-')">-</button>
-            </div>
-            <div class="row-4">
-            <button onclick="clearDisplay()">C</button>
-            <button onclick="pressNumber(0)">0</button>
-            <button onclick="calculate()">=</button>
-            <button onclick="pressOperation('+')">+</button>
-            </div>
-            
-
-            
-            
         </div>
         <script src="script.js"></script>
     </body>
