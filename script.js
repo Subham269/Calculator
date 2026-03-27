@@ -2,6 +2,7 @@ let firstNumber =null;
 let secondNumber =null;
 let operator = null;
 let shouldResetdisplay =false;
+let history = [];
 function clearDisplay()
 {
     firstNumber =null;
