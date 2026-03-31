@@ -45,7 +45,20 @@ function calculate()
         case '/': document.getElementById("display").textContent= firstNumber/secondNumber;
         break;
     }
-    operator = null;
+    let entry = `${firstNumber} ${operator} ${secondNumber} = ${document.getElementById("display").textContent}`
+    history.push(entry);
+    updateHistoryUI();
     shouldResetdisplay = true;
+}
+function updateHistoryUI()
+{
+    let history_list=document.getElementById("history-list");
+    history_list.innerHTML="";
+    for(let i=history.length-1;i>=0;i--)
+    {
+        let li=document.createElement("li");
+        li.textContent=history[i];
+        history_list.appendChild(li);
+    }
 }
 

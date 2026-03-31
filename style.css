@@ -12,6 +12,7 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
+    gap:20px;
 }
 .container
 {
@@ -65,3 +66,31 @@ button:active
 {
     transform: scale(0.95);
 }
+#history-container 
+{
+    background: white;
+    border-radius:12px;
+    padding: 16px;
+    width:200px;
+    max-height:400px;
+    overflow-y:auto;
+}
+h3
+{
+    margin: 0 0 10px 0;
+    font-size:25px;
+    color: #333;
+}
+#history-list
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#history-list li 
+{
+    padding: 6px 0;
+    border-bottom: 2px solid #eee;
+    color: #555;
+}
+

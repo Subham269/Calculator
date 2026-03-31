@@ -8,6 +8,7 @@ A simple, functional calculator built with vanilla JavaScript.
 - Clear button to reset
 - Responsive button layout
 - Clean, modern UI
+- History of Calculations
 
 ## How to Use
 
@@ -25,6 +26,8 @@ A simple, functional calculator built with vanilla JavaScript.
 - I found the css challenging. I am struggling to get the intuition for the proper operations to use in order to make the calculator look professional. 
 
 - I will improve my css and its intuition in my projects, I have to also improve the logic flow in Javascript where currently I have no problem thinking about each section of logic but I do get a bit confused when multiple logic flows work together. 
+
+-I learned how to use creatElement tag and appendChild to add a list in real time while working on the history part.
 
 ## Technologies
 
