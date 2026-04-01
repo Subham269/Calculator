@@ -2,7 +2,7 @@ let firstNumber =null;
 let secondNumber =null;
 let operator = null;
 let shouldResetdisplay =false;
-let history = [];
+let history = JSON.parse(localStorage.getItem("calcHistory")) || [];
 function clearDisplay()
 {
     firstNumber =null;
@@ -47,6 +47,7 @@ function calculate()
     }
     let entry = `${firstNumber} ${operator} ${secondNumber} = ${document.getElementById("display").textContent}`
     history.push(entry);
+    localStorage.setItem("calcHistory",JSON.stringify(history));
     updateHistoryUI();
     shouldResetdisplay = true;
 }
@@ -61,4 +62,6 @@ function updateHistoryUI()
         history_list.appendChild(li);
     }
 }
+updateHistoryUI();
+//Add History dashboard button to toggle. 
 
