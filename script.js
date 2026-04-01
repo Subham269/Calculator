@@ -63,5 +63,21 @@ function updateHistoryUI()
     }
 }
 updateHistoryUI();
+function toggleHistory()
+{
+    let container=document.getElementById("history-container");
+    let btn=document.querySelector("button[onclick='toggleHistory()']");
+
+    if(container.style.display === "none")
+    {
+        container.style.display="block";
+        btn.textContent="History ▲";
+    }
+    else
+    {
+        container.style.display="none";
+        btn.textContent="History ▼"
+    }
+}
 //Add History dashboard button to toggle. 
 
