@@ -18,6 +18,7 @@ A simple, functional calculator built with vanilla JavaScript.
 4. Enter the second number
 5. Click "=" to see the result
 6. Click "C" to clear and start over
+7. Press on "History" button to view your calculation history.
 
 ## What I Learned
 
