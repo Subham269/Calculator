@@ -2,6 +2,8 @@
 
 A simple, functional calculator built with vanilla JavaScript.
 
+🔗 **[Live Demo](https://subham-calculator.netlify.app/)**
+
 ## Features
 
 - Basic arithmetic operations (+, -, ×, /)
